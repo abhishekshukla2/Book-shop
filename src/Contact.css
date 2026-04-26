@@ -1,0 +1,98 @@
+.contact-container {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  text-align: center;
+  font-family: Arial;
+  color: white;
+}
+
+/* TITLE ANIMATION */
+.contact-title {
+  font-size: 42px;
+  color: #00e5ff;
+  animation: fadeDown 1s ease;
+}
+
+.contact-subtitle {
+  color: #ccc;
+  margin-bottom: 30px;
+  animation: fadeDown 1.2s ease;
+}
+
+/* CARD */
+.contact-card {
+  max-width: 500px;
+  margin: auto;
+  padding: 25px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
+  animation: floatIn 1s ease;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* INPUT HOVER EFFECT */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #00e5ff;
+}
+
+/* BUTTON */
+.contact-form button {
+  padding: 12px;
+  background: linear-gradient(90deg, #00e5ff, #1e90ff);
+  border: none;
+  border-radius: 25px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* BUTTON ANIMATION */
+.contact-form button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #00e5ff;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
