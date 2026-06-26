@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"
 import chinu from "../chinu.jpeg";
 import jay1 from "../jay1.png";
 
