@@ -1,6 +1,6 @@
 import { useState } from "react"
 import chinu from "../chinu.jpeg"
-import jay1 from "../jay1.png";
+import jay1 from "../jay1.png"
 
 function ImageSlider() {
   const images = [chinu, jay1];
